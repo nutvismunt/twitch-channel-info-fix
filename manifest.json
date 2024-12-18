@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "fix twitch streamer info",
+  "version": "2.0",
+  "description": "Изменяет код страницы Twitch при просмотре стрима на старую версию.",
+  "permissions": ["activeTab"],
+  "background": {
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.twitch.tv/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
